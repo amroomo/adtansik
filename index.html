@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دليل تنسيق الدبلومة الأمريكية | المعادلة الأجنبية</title>
+  <meta name="description" content="دليل عملي لتسجيل وتنسيق طلاب الدبلومة الأمريكية والشهادات المعادلة الأجنبية: التسجيل الإلكتروني، تسليم الملف، الملاحظات، وأماكن التقديم." />
+  <meta name="theme-color" content="#10233a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #10233a;
+      --navy-2: #18324f;
+      --ink: #1c2430;
+      --muted: #5b6573;
+      --line: #d8deE6;
+      --paper: #f6f3ec;
+      --card: #ffffff;
+      --gold: #b8893a;
+      --gold-soft: #f4e7cf;
+      --teal: #1b6b63;
+      --teal-soft: #e4f3f1;
+      --danger: #9b2c2c;
+      --danger-soft: #f8e8e8;
+      --shadow: 0 18px 40px rgba(16, 35, 58, 0.08);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 100% -10%, #ead9b4 0%, transparent 45%),
+        linear-gradient(180deg, #f8f5ee 0%, var(--paper) 28%, #eef2f6 100%);
+      font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.85;
+    }
+
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, .btn { font-family: inherit; }
+
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+
+    header.hero {
+      position: relative;
+      overflow: hidden;
+      color: #f7f1e6;
+      background:
+        linear-gradient(135deg, rgba(16,35,58,.55), rgba(16,35,58,.2)),
+        var(--navy);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -20% -40% 30%;
+      height: 320px;
+      background: radial-gradient(circle, rgba(184,137,58,.28), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; padding: 42px 0 28px; }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border: 1px solid rgba(247,241,230,.18);
+      border-radius: 999px;
+      color: #ead9b4;
+      font-size: 13px;
+      letter-spacing: .02em;
+    }
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 720px;
+      margin: 0 0 22px;
+      color: #d8cbb3;
+      font-size: 18px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      padding: 0 16px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .btn-gold { background: var(--gold); color: #22170a; }
+    .btn-ghost { background: transparent; color: #f7f1e6; border-color: rgba(247,241,230,.25); }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .stat {
+      padding: 14px 16px;
+      border: 1px solid rgba(247,241,230,.1);
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+    }
+    .stat b { display: block; font-size: 22px; color: #ead9b4; }
+    .stat span { color: #c9bba3; font-size: 13px; }
+
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246,243,236,.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .toc-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+    .toc a {
+      flex: 0 0 auto;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .toc a.active { background: var(--navy); color: #f7f1e6; border-color: var(--navy); }
+
+    section { padding: 42px 0 8px; }
+    .section-head { margin-bottom: 22px; }
+    .section-head .num {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .08em;
+    }
+    h2 { margin: 6px 0 8px; font-size: clamp(26px, 4vw, 36px); color: var(--navy); }
+    .section-head p { margin: 0; color: var(--muted); max-width: 70ch; }
+
+    .grid-2 { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; }
+    .cards { display: grid; gap: 14px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 20px; color: var(--navy); }
+    .muted { color: var(--muted); }
+    .step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      padding: 18px 0;
+      border-bottom: 1px solid #eef1f5;
+    }
+    .step:last-child { border-bottom: 0; padding-bottom: 0; }
+    .step-card {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+    .step-card .step-body { min-width: 0; }
+    .step-no {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: #f7f1e6;
+      font-weight: 700;
+    }
+    .step h3 { margin: 0 0 6px; font-size: 18px; }
+    .step p { margin: 0 0 8px; }
+    ul.clean, .check-list { margin: 8px 0 0; padding: 0; list-style: none; }
+    ul.clean li { position: relative; padding-right: 16px; margin: 6px 0; }
+    ul.clean li::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 11px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .note, .warn, .ok {
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+    .note { background: var(--gold-soft); color: #5c4318; }
+    .warn { background: var(--danger-soft); color: #6d1f1f; }
+    .ok { background: var(--teal-soft); color: #134e48; }
+    .note strong, .warn strong, .ok strong { display: block; margin-bottom: 4px; }
+
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e6ebf1;
+    }
+    .check-list li:last-child { border-bottom: 0; }
+    .check-list input { margin-top: 7px; accent-color: var(--teal); width: 18px; height: 18px; }
+    .progress-box { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 8px; }
+    .bar { height: 8px; background: #e8edf3; border-radius: 999px; overflow: hidden; }
+    .bar > span { display: block; height: 100%; width: 0; background: var(--teal); transition: width .25s ease; }
+
+    .zones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .zone { padding: 16px; border-radius: 18px; background: #fff; border: 1px solid var(--line); }
+    .zone b { display: block; color: var(--navy); font-size: 20px; margin-bottom: 4px; }
+    .choice { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .choice .card { min-height: 100%; }
+    .tag {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #6a4b16;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .tag.best { background: var(--teal-soft); color: #134e48; }
+
+    .subjects { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+    .chip {
+      display: inline-flex;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef3f8;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .uni-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+    .formula {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .formula div {
+      background: #f7f3ea;
+      border-radius: 14px;
+      padding: 12px;
+      text-align: center;
+    }
+    .formula b { display: block; color: var(--navy); font-size: 18px; }
+
+    .places { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .place h3 { margin-top: 0; }
+    .map-link {
+      display: inline-flex;
+      margin-top: 10px;
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding: 28px 0 40px;
+      color: #d8cbb3;
+      background: var(--navy);
+    }
+    footer a { color: #ead9b4; }
+    .fine { font-size: 13px; color: #b7aa93; }
+    .source-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px;
+    }
+    .wa-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #128c7e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .wa-chip svg { width: 18px; height: 18px; flex: 0 0 auto; }
+
+    @media (max-width: 860px) {
+      .stats, .grid-2, .zones, .choice, .places, .uni-grid, .formula { grid-template-columns: 1fr; }
+      .hero-inner { padding-top: 28px; }
+    }
+
+    @media print {
+      nav.toc, .hero-actions, .no-print { display: none !important; }
+      body { background: #fff; }
+      header.hero, footer { background: #fff; color: #111; }
+      .card, .zone, .stat { box-shadow: none; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="kicker">تنسيق حكومي- شهادات الدبلومه الامريكية</div>
+      <h1>دليل تنسيق الدبلومة الأمريكية خطوة بخطوة</h1>
+      <p class="lead">شرح عملي للتسجيل الإلكتروني، تجهيز الملفات، تسليم الأوراق، وأماكن التقديم. مصمم ليُستخدم من الموبايل أثناء التحضير، أو يُطبع قبل الذهاب لمكتب التنسيق.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#part-1">ابدأ من التسجيل</a>
+        <a class="btn btn-ghost" href="https://tansik.egypt.gov.eg/application/" target="_blank" rel="noopener">موقع التنسيق الرسمي</a>
+        <button class="btn btn-ghost no-print" type="button" onclick="window.print()">طباعة أو حفظ PDF</button>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>4</b><span>أجزاء رئيسية</span></div>
+        <div class="stat"><b>75</b><span>رغبة يجب استكمالها</span></div>
+        <div class="stat"><b>2</b><span>ملف قبل التسليم</span></div>
+        <div class="stat"><b>3</b><span>مقار للتقديم</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="wrap toc-inner">
+      <a href="#part-1">1. التسجيل الإلكتروني</a>
+      <a href="#part-2">2. تسليم الملف</a>
+      <a href="#part-3">3. ملاحظات هامة</a>
+      <a href="#part-4">4. أماكن التقديم</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="part-1">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">الجزء الأول</div>
+          <h2>التسجيل على الموقع الإلكتروني</h2>
+          <p>هذه المرحلة تتم بالكامل من موقع التنسيق. لا تدخل في أول يومين إن أمكن؛ الموقع يكون ثقيلًا ويزيد احتمال خطأ إدخال البيانات.</p>
+        </div>
+
+        <div class="card">
+            <div class="step">
+              <div class="step-no">1</div>
+              <div>
+                <h3>ادخل على موقع التنسيق</h3>
+                <p><a href="https://tansik.egypt.gov.eg/application/" target="_blank" rel="noopener">tansik.egypt.gov.eg/application</a></p>
+                <div class="note"><strong>تنبيه</strong>حتى إعداد هذا الدليل، لم يُعلن بعد تاريخ بدء استقبال شهادات المعادلة العربية والأجنبية. راقب الموقع الرسمي.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">2</div>
+              <div>
+                <h3>اختر نوع التنسيق</h3>
+                <ul class="clean">
+                  <li>تنسيق الشهادات المعادلة</li>
+                  <li>تسجيل الشهادات المعادلة الأجنبية</li>
+                  <li>ثم: تسجيل جديد</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">3</div>
+              <div>
+                <h3>اكتب البيانات المطلوبة</h3>
+                <ul class="clean">
+                  <li>نوع الشهادة</li>
+                  <li>اسم المدرسة</li>
+                  <li>اسم الدولة</li>
+                  <li>بيانات الطالب</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">4</div>
+              <div>
+                <h3>عنوان الطالب</h3>
+                <p>طالب الشهادات الأجنبية المعادلة مستثنى من المربع السكني، لذلك يمكن كتابة العنوان بما يناسب رغبات الجامعات.</p>
+                <ul class="clean">
+                  <li>من يريد جامعة القاهرة يكتب عنوانًا في القاهرة أو الجيزة.</li>
+                  <li>من يريد جامعة الإسكندرية يكتب عنوانًا في الإسكندرية.</li>
+                </ul>
+                <div class="warn"><strong>العنوان صعب تعديله</strong>بعد إنهاء تسجيل البيانات، التعديل يتم من مكتب التنسيق أو معامل حاسبات هندسة القاهرة.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">5</div>
+              <div>
+                <h3>أرقام الموبايل ثم التأكيد</h3>
+                <p>اكتب رقمين موبايل مصريين يعملان ويستقبلان الرسائل. سيصل عليهما اسم المستخدم وكلمة المرور.</p>
+                <p>بعد المراجعة وتأكيد الطلب ستظهر كل البيانات التي أدخلتها. راجعها بدقة؛ التعديل بعدها ليس أمرًا بسيطًا.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no">6</div>
+              <div>
+                <h3>الدفع ثم الدخول مرة أخرى</h3>
+                <p>ستظهر صفحة الدفع. بعد الدفع اطبع إيصال الدفع واحتفظ به.</p>
+                <p>ارجع لموقع التنسيق وسجّل الدخول باسم المستخدم وكلمة المرور.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="card step-card" id="step-7" style="margin-top:16px;">
+          <div class="step-no">7</div>
+          <div class="step-body">
+            <h3>بعد الدخول ستظهر 3 صفحات</h3>
+            <p class="muted">اطبع كل صفحة بعد مراجعتها.</p>
+            <ul class="clean">
+              <li><strong>البيانات الشخصية:</strong> راجعها ثم اطبعها.</li>
+              <li><strong>الدرجات:</strong> SAT يظهر بعد إدخال College Board ID من إعدادات حساب الطالب. EST/ACT يظهران بالرقم القومي المكوّن من 14 رقمًا في شهادة الميلاد. أدخل GPA يدويًا واختر المواد بنفسك.</li>
+              <li><strong>تسجيل الرغبات</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card step-card" id="step-8" style="margin-top:16px;">
+          <div class="step-no">8</div>
+          <div class="step-body">
+            <h3>ادخال درجات ال GPA</h3>
+            <p>الـ GPA هو المجموع التراكمي للمواد الدراسية، ويمثل <strong>40%</strong> من المجموع الكلي عند التقديم للجامعات في مصر. يُحسب من <strong>8 مواد</strong>.</p>
+            <p><strong>5 مواد أساسية:</strong></p>
+            <div class="subjects">
+              <span class="chip">English</span>
+              <span class="chip">Math</span>
+              <span class="chip">Physics</span>
+              <span class="chip">Chemistry</span>
+              <span class="chip">Biology</span>
+            </div>
+            <p><strong>3 مواد إضافية</strong> حسب نظام المدرسة، مثل:</p>
+            <div class="subjects">
+              <span class="chip">Computer</span>
+              <span class="chip">Social Studies</span>
+              <span class="chip">Business</span>
+              <span class="chip">Economics</span>
+              <span class="chip">Geography</span>
+              <span class="chip">لغة ثانية</span>
+              <span class="chip">أو أي مواد معتمدة بالمدرسة</span>
+            </div>
+
+            <h3 style="margin-top:18px;">توزيع المواد حسب نوع الجامعة</h3>
+            <div class="zone">
+              <b>الجامعات الحكومية</b>
+              يُحسب الـ GPA من Grade 11 وGrade 12 فقط. يمكن توزيع الـ 8 مواد بعدة أشكال:
+              <ul class="clean">
+                <li>3 مواد من Grade 11 والباقي من Grade 12</li>
+                <li>مادتان من Grade 11 والباقي من Grade 12</li>
+                <li>مادة واحدة من Grade 11 والباقي من Grade 12</li>
+                <li>أو الـ 8 مواد كلها من Grade 12</li>
+              </ul>
+            </div>
+
+            <div class="warn" style="margin-top:14px;">
+              <strong>ملاحظة مهمة جدًا بخصوص أسماء المواد</strong>
+              اسم المادة في الشهادة مهم، لأنه قد يؤثر على القطاعات التي يمكنك التقديم إليها.
+            </div>
+            <div class="grid-2" style="margin-top:12px;">
+              <div class="zone">
+                <b>لو هدفك كلية هندسة</b>
+                لازم يكون اسم المادة مكتوبًا: Math أو Mathematics أو Advanced Math أو Advanced Mathematics.
+                <p class="muted" style="margin-top:8px;">إذا كان المكتوب فقط Algebra أو Geometry فقد لا تُحتسب كمادة Math المطلوبة لقطاع الهندسة.</p>
+              </div>
+              <div class="zone">
+                <b>لو هدفك قطاع طبي</b>
+                يمكن قبول مادة Math أو أحد فروعها حسب متطلبات الجهة، لكن يجب أن تكون لديك المواد الأساسية:
+                <div class="subjects">
+                  <span class="chip">English</span>
+                  <span class="chip">Chemistry</span>
+                  <span class="chip">Physics</span>
+                  <span class="chip">Biology</span>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top:12px;">قبل اختيار المواد أو اعتمادها، تأكد من توافق أسمائها مع متطلبات الكلية التي تخطط للتقديم لها.</p>
+          </div>
+        </div>
+
+        <div class="card step-card" id="step-9" style="margin-top:16px;">
+          <div class="step-no">9</div>
+          <div class="step-body">
+            <div class="tag best">الأفضل لمعظم الطلاب</div>
+            <h3>طريقة إدخال الرغبات</h3>
+            <p>تسجيل الرغبات: اختر نوع الشهادة، ثم اكتب اسم المستخدم وكلمة المرور، وتأكد من البيانات الشخصية.</p>
+            <div class="choice" style="margin-top:12px;">
+              <div>
+                <strong>الاختيار بالتخصصات</strong>
+                <p class="muted">تختار تخصصًا واحدًا عبر الجامعات: طب القاهرة، طب عين شمس، طب الإسكندرية. هذه الطريقة أوضح وأسهل.</p>
+              </div>
+              <div>
+                <strong>الاختيار بالجامعات</strong>
+                <p class="muted">تختار كليات الجامعة الواحدة معًا: طب القاهرة، أسنان القاهرة، صيدلة القاهرة.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>قواعد الرغبات والمنطقة الجغرافية</h3>
+          <p>متاح لكم 75 رغبة ويجب ملؤها بالكامل، مع الالتزام بترتيب المنطقة الجغرافية حسب العنوان المسجّل في بداية التسجيل.</p>
+          <div class="zones">
+            <div class="zone"><b>منطقة أ</b>الجامعات الأقرب للعنوان الذي سُجّل أولًا.</div>
+            <div class="zone"><b>منطقة ب</b>المنطقة التالية بعد منطقة أ.</div>
+            <div class="zone"><b>منطقة ج</b>باقي المحافظات.</div>
+          </div>
+          <div class="ok" style="margin-top:14px;"><strong>الترتيب الصحيح: أ ثم ب ثم ج</strong>لا يجوز ب ثم أ ثم ج، ولا الانتقال من أ إلى ج مباشرة. يجب اختيار كلية واحدة على الأقل من منطقة ب حتى يمكن الانتقال إلى منطقة ج.</div>
+          <p style="margin-top:14px;">بعد الانتهاء اطبع الرغبات. يمكن تعديل الرغبات في أي وقت، حتى بعد تسليم الأوراق لمكتب التنسيق.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="part-2">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">الجزء الثاني</div>
+          <h2>تسليم الملف لمكتب التنسيق</h2>
+          <p>بعد إنهاء الموقع، حضّر ملفين ثم اذهب للمكتب. علّم على كل ورقة وأنت تجهّز؛ التقدم يُحفظ على نفس الجهاز.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="progress-box">
+              <h3>الملف الأول</h3>
+              <span class="muted" id="p1-count">0 / 4</span>
+            </div>
+            <div class="bar"><span id="p1-bar"></span></div>
+            <ul class="check-list" data-group="file1">
+              <li><input type="checkbox" id="f1a" /><label for="f1a">إيصال الدفع</label></li>
+              <li><input type="checkbox" id="f1b" /><label for="f1b">صورة بطاقة الطالب</label></li>
+              <li><input type="checkbox" id="f1c" /><label for="f1c">أصل وصورة شهادة الميلاد</label></li>
+              <li><input type="checkbox" id="f1d" /><label for="f1d">صورة بطاقة الأب (احتياطي)</label></li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="progress-box">
+              <h3>الملف الثاني: الأوراق الموثقة</h3>
+              <span class="muted" id="p2-count">0 / 6</span>
+            </div>
+            <div class="bar"><span id="p2-bar"></span></div>
+            <ul class="check-list" data-group="file2">
+              <li><input type="checkbox" id="f2a" /><label for="f2a">جميع الأوراق التي تم توثيقها سابقًا</label></li>
+              <li><input type="checkbox" id="f2b" /><label for="f2b">جميع الأوراق المطبوعة من موقع التنسيق</label></li>
+              <li><input type="checkbox" id="f2c" /><label for="f2c">شهادة ميلاد حديثة للطالب</label></li>
+              <li><input type="checkbox" id="f2d" /><label for="f2d">صورة بطاقة الطالب إن وجدت (غير إلزامية)</label></li>
+              <li><input type="checkbox" id="f2e" /><label for="f2e">صور بطاقة ولي الأمر والطالب وصور الإقامات</label></li>
+              <li><input type="checkbox" id="f2f" /><label for="f2f">صور جواز سفر الطالب وولي الأمر وجميع تأشيرات الدخول والخروج. الأفضل تصوير الجواز من أول صفحة لآخر صفحة</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card">
+            <h3>صور إضافية قبل الذهاب</h3>
+            <p>لا يوجد تصوير داخل المكتب. التصوير بالخارج أغلى والزحام أكبر. خذ نسختين من:</p>
+            <ul class="clean">
+              <li>البطاقات</li>
+              <li>جوازات السفر</li>
+              <li>شهادة الميلاد</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>عند استلام المظروف من المكتب</h3>
+            <p>سلّم وصل الدفع، واستلم ظرفًا كرتونيًا كبيرًا بداخله استمارة. تأكد أن الملف خاص بشهادات المعادلة الأجنبية وليس العربية.</p>
+            <div class="warn"><strong>راجع محتويات الظرف فورًا</strong>حدث أن يُسلَّم الظرف بدون استمارة، فيضطر الطالب لإبداله. اكتب بياناتك على الاستمارة وعلى الظرف من الخارج، ضع الأوراق داخله، ثم سلّمه للموظف وخذ وصل الاستلام.</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>وصل الاستلام ونتيجة الترشيح</h3>
+          <p>وصل الاستلام إثبات أن الملف سُلّم، وهو مطلوب أيضًا إذا رغبتم في سحب الملف لاحقًا. بعد ظهور نتيجة الترشيح اطبعوا خطاب الترشيح وتوجهوا إلى الجامعة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="part-3">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">الجزء الثالث</div>
+          <h2>ملاحظات هامة قبل الذهاب</h2>
+          <p>هذه التفاصيل تختصر الزحام وتقلل احتمال رفض الملف أو الرجوع مرة أخرى.</p>
+        </div>
+        <div class="places">
+          <div class="card">
+            <h3>لا تذهب بملف ناقص</h3>
+            <p>إذا نقص مستند أو وُجدت ورقة غير موثقة، قد يُرفض الملف بالكامل ويُكتب تعهد لاستكمال الناقص لاحقًا حسب قرار الموظف المختص.</p>
+          </div>
+          <div class="card">
+            <h3>احتفظ بنسخ في البيت</h3>
+            <p>صوّروا جميع الأصول قبل الذهاب، واحتفظوا بنسخة من كل المستندات في المنزل.</p>
+          </div>
+          <div class="card">
+            <h3>وفّر وقت الموظف</h3>
+            <p>اكتبوا كل البيانات المطلوبة قبل الوصول إلى الموظف، والتزموا بالهدوء وحسن التعامل؛ ذلك يسرّع إنهاء الإجراءات.</p>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="card">
+            <h3>الدخول للمقر</h3>
+            <ul class="clean">
+              <li>الدخول لشخص واحد فقط.</li>
+              <li>لا يُسمح بدخول الأسرة بالكامل لضيق المكان، والأمن يشدد على ذلك.</li>
+              <li>يُفضل عدم اصطحاب كبار السن.</li>
+              <li>خذوا زجاجة مياه وقلمًا جافًا.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>مواعيد العمل</h3>
+            <ul class="clean">
+              <li>السبت إلى الخميس: من 9:00 صباحًا، ولا يوجد موعد محدد لانتهاء من هم داخل المقر.</li>
+              <li>الجمعة: من 10:00 صباحًا، مع توقف ساعة لصلاة الجمعة، ثم استكمال العمل حتى 4:00 مساءً.</li>
+              <li>تقليل الاغتراب مدته يومان فقط.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="part-4">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">الجزء الرابع</div>
+          <h2>أماكن تقديم ملفات التنسيق</h2>
+          <p>اختار أقرب مقر، وراجع الأوراق قبل التوجه.</p>
+        </div>
+        <div class="places">
+          <article class="card place">
+            <div class="tag">المقر الرئيسي</div>
+            <h3>القاهرة / الجيزة</h3>
+            <p>داخل المدينة الجامعية والحرم الجامعي لجامعة القاهرة.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/B27UAdBc55YcD8Jq7?g_st=ic" target="_blank" rel="noopener">فتح الموقع على خرائط جوجل</a>
+          </article>
+          <article class="card place">
+            <div class="tag">الإسكندرية</div>
+            <h3>سموحة</h3>
+            <p>المدينة الجامعية للطالبات – عزبة سعد – سموحة.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/fpuC7B5URBfdeyGS7" target="_blank" rel="noopener">فتح الموقع على خرائط جوجل</a>
+          </article>
+          <article class="card place">
+            <div class="tag">أسيوط</div>
+            <h3>الوليدية</h3>
+            <p>مبنى إدارة جامعة أسيوط القديم.</p>
+            <a class="map-link" href="https://maps.app.goo.gl/ZHot264HHjy9eEeX6" target="_blank" rel="noopener">فتح الموقع على خرائط جوجل</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="source-line">
+        مصدر الشرح الأصلي:
+        <span class="wa-chip">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          قناة واتساب نفهم SAT_EST_ACT
+        </span>
+      </p>
+      <p class="fine">هذا الدليل تنظيم بصري للمحتوى التعليمي، وليس بديلًا عن موقع التنسيق الرسمي أو تعليمات مكتب التنسيق. راجع المواعيد والقواعد من المصدر الرسمي قبل التنفيذ.</p>
+    </div>
+  </footer>
+
+  <script>
+    const boxes = document.querySelectorAll('.check-list input[type="checkbox"]');
+    boxes.forEach((box) => {
+      box.checked = localStorage.getItem(box.id) === "1";
+      box.addEventListener("change", () => {
+        localStorage.setItem(box.id, box.checked ? "1" : "0");
+        updateProgress();
+      });
+    });
+
+    function updateGroup(group, countId, barId) {
+      const items = document.querySelectorAll('[data-group="' + group + '"] input');
+      const done = [...items].filter((i) => i.checked).length;
+      document.getElementById(countId).textContent = done + " / " + items.length;
+      document.getElementById(barId).style.width = (done / items.length * 100) + "%";
+    }
+    function updateProgress() {
+      updateGroup("file1", "p1-count", "p1-bar");
+      updateGroup("file2", "p2-count", "p2-bar");
+    }
+    updateProgress();
+
+    const links = document.querySelectorAll("nav.toc a");
+    const sections = [...links].map((a) => document.querySelector(a.getAttribute("href")));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    sections.forEach((s) => s && io.observe(s));
+  </script>
+</body>
+</html>
