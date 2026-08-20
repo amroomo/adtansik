@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اعرف قبل التنسيق | دليل الدبلومة الأمريكية</title>
+  <meta name="description" content="موضوعات اعرف قبل التنسيق: القرارات الرسمية، ومتطلبات الدرجات والكريدت، والتسجيل الإلكتروني على مرحلتين مع نماذج الأوراق الثلاثة." />
+  <meta name="theme-color" content="#10233a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #10233a;
+      --navy-2: #18324f;
+      --ink: #1c2430;
+      --muted: #5b6573;
+      --line: #d8deE6;
+      --paper: #f6f3ec;
+      --card: #ffffff;
+      --gold: #b8893a;
+      --gold-soft: #f4e7cf;
+      --teal: #1b6b63;
+      --teal-soft: #e4f3f1;
+      --danger: #9b2c2c;
+      --danger-soft: #f8e8e8;
+      --shadow: 0 18px 40px rgba(16, 35, 58, 0.08);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 100% -10%, #ead9b4 0%, transparent 45%),
+        linear-gradient(180deg, #f8f5ee 0%, var(--paper) 28%, #eef2f6 100%);
+      font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.85;
+    }
+
+    a { color: inherit; }
+    .wrap { width: min(800px, calc(100% - 32px)); margin: 0 auto; }
+
+    header.hero {
+      position: relative;
+      overflow: hidden;
+      color: #f7f1e6;
+      background:
+        linear-gradient(135deg, rgba(16,35,58,.55), rgba(16,35,58,.2)),
+        var(--navy);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      inset: auto -20% -40% 30%;
+      height: 320px;
+      background: radial-gradient(circle, rgba(184,137,58,.28), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; padding: 36px 0 28px; }
+    .kicker {
+      display: inline-flex;
+      padding: 6px 12px;
+      border: 1px solid rgba(247,241,230,.18);
+      border-radius: 999px;
+      color: #ead9b4;
+      font-size: 13px;
+    }
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    .lead {
+      margin: 0 0 22px;
+      color: #d8cbb3;
+      font-size: 18px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn-gold { background: var(--gold); color: #22170a; }
+    .btn-ghost { background: transparent; color: #f7f1e6; border-color: rgba(247,241,230,.25); }
+
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(246,243,236,.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .toc-inner {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+    .toc a {
+      flex: 0 0 auto;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--line);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .toc a.active { background: var(--navy); color: #f7f1e6; border-color: var(--navy); }
+
+    section { padding: 36px 0 8px; }
+    .section-head { margin-bottom: 22px; }
+    .section-head .num {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .08em;
+    }
+    h2 { margin: 6px 0 8px; font-size: clamp(22px, 4vw, 30px); color: var(--navy); }
+    .section-head p { margin: 0; color: var(--muted); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .aaraf-no {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #f7f1e6;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .aaraf-post h2 { margin-top: 0; }
+    .aaraf-post > p { color: var(--ink); }
+    .aaraf-post h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+      color: var(--navy);
+    }
+
+    .note, .warn, .ok {
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 12px;
+    }
+    .note { background: var(--gold-soft); color: #5c4318; }
+    .warn { background: var(--danger-soft); color: #6d1f1f; }
+    .ok { background: var(--teal-soft); color: #134e48; }
+    .note strong, .warn strong, .ok strong { display: block; margin-bottom: 4px; }
+
+    .req { margin: 8px 0 0; padding: 0; list-style: none; }
+    .req li { position: relative; padding-right: 16px; margin: 6px 0; }
+    .req li::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 11px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: .7;
+    }
+
+    .forms { display: grid; gap: 10px; margin-top: 16px; }
+    .forms a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .forms a span { color: var(--teal); font-size: 14px; }
+    .source-link {
+      display: block;
+      margin-top: 10px;
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .news-shot {
+      margin: 14px 0 0;
+    }
+    .news-shot img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding: 28px 0 40px;
+      color: #d8cbb3;
+      background: var(--navy);
+    }
+    .fine { font-size: 13px; color: #b7aa93; margin: 0; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="kicker">تنسيق حكومي- شهادات الدبلومه الامريكية</div>
+      <h1>اعرف قبل التنسيق</h1>
+      <p class="lead">موضوعات مختصرة قبل التقديم: القرارات الرسمية، ومتطلبات الأوراق، وشكل التسجيل الإلكتروني على مرحلتين.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#aaraf-1">ابدأ من اعرف 1</a>
+        <a class="btn btn-ghost" href="index.html">العودة إلى الدليل</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="wrap toc-inner">
+      <a href="#aaraf-1">اعرف 1</a>
+      <a href="#aaraf-2">اعرف 2</a>
+      <a href="#aaraf-3">اعرف 3</a>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="num">سلسلة موضوعات</div>
+          <h2>قبل ما تدخل مكتب التنسيق</h2>
+          <p>ستُضاف هنا موضوعات جديدة تباعًا. ابدأ بالموضوع الأول، ثم التسجيل الإلكتروني.</p>
+        </div>
+
+        <article class="card aaraf-post" id="aaraf-1">
+          <div class="aaraf-no">اعرف 1</div>
+          <h2>اعرف قبل التنسيق... ارجع للقرارات الرسمية فقط</h2>
+          <p>وقت التقديم، لا يُعتد بالكلام المتداول أو الاجتهادات الشخصية، وإنما بالقرارات الصادرة من الجهات الرسمية.</p>
+
+          <div class="ok">
+            <strong>أولًا: متطلبات التنسيق: الدرجات + وزن المادة (Credit Hours)</strong>
+            يجب أن تكون موثقة رسميًا. وإذا لم يظهر وزن المادة بالكريدت في الـ Transcript أو الشهادات المفردة أو «نتائجي»، يمكن تقديم إفادة أو بيان درجات موضح به الوزن، وفق الحل البديل المعتمد من الملحق الثقافي (12 أغسطس). ويُستثنى من ذلك من لديه «نتائجي» موضح بها وزن المادة بما يعادل 4 حصص أو أكثر.
+          </div>
+
+          <div class="ok">
+            <strong>ثانيًا: ختم Cognia</strong>
+            إذا كان موجودًا فممتاز، وإذا لم يكن موجودًا فهناك قرار رسمي من المجلس الأعلى بتاريخ 13 أبريل يؤكد أنه غير مطلوب، وأن جهة الاعتماد هي إدارة الامتحانات. ولم تصدر أي قرارات جديدة تُلزم بهذا الختم.
+          </div>
+
+          <div class="warn">
+            <strong>مهم</strong>
+            لا يوجد رسميًا ما يمنع اعتماد مادة أقل من 4 حصص طالما أنها بنظام الكريدت، لكن من حق جهة التنسيق طلب ما يثبت وزن المادة بالكريدت، وهنا تأتي أهمية الإفادة أو بيان الدرجات.
+          </div>
+
+          <div class="note">
+            <strong>الخلاصة</strong>
+            اعتمد على المستندات والقرارات الرسمية فقط، ولا تلتفت لأي معلومات غير صادرة من جهة رسمية.
+          </div>
+        </article>
+
+        <article class="card aaraf-post" id="aaraf-2">
+          <div class="aaraf-no">اعرف 2</div>
+          <h2>التسجيل الإلكتروني يتم على مرحلتين فقط</h2>
+          <p>التسجيل على موقع التنسيق مرحلتان فقط، وبعدهما تُطبع 3 أوراق ويكتمل التسجيل الإلكتروني.</p>
+
+          <div class="ok">
+            <strong>المرحلة الأولى: استخراج اسم المستخدم وكلمة المرور (خدمة مدفوعة)</strong>
+            المطلوب:
+            <ul class="req">
+              <li>بيانات الطالب والمدرسة</li>
+              <li>رقمان هاتف مصريان لاستقبال الرسائل</li>
+              <li>عنوان الطالب</li>
+            </ul>
+          </div>
+
+          <div class="warn">
+            <strong>مهم: العنوان</strong>
+            العنوان ليس بالضرورة عنوان السكن الفعلي، بل يمكن اختيار عنوان يتيح ظهور الجامعات المطلوبة ضمن التوزيع الجغرافي (أ). أما إذا كان الهدف الالتحاق بجامعة داخل المحافظة الفعلية، فيُستخدم العنوان الحقيقي.
+          </div>
+
+          <div class="note">
+            <strong>بعد تسجيل البيانات</strong>
+            تصلك رسالة السداد (فيزا أو فوري)، ثم رسالة أخرى تحتوي على اسم المستخدم وكلمة المرور.
+          </div>
+
+          <div class="ok">
+            <strong>المرحلة الثانية: تسجيل الدرجات والرغبات</strong>
+            بعد الانتهاء، يتم طباعة 3 أوراق فقط. النماذج أدناه توضح شكل الورق، وبذلك تكتمل إجراءات التسجيل الإلكتروني.
+          </div>
+
+          <div class="forms">
+            <a href="forms/01-el-bayanat-alasasia.pdf" download="01-البيانات-الأساسية.pdf">01 البيانات الأساسية <span>تحميل الملف</span></a>
+            <a href="forms/02-el-darajat.pdf" download="02-الدرجات.pdf">02 الدرجات <span>تحميل الملف</span></a>
+            <a href="forms/03-el-raghabat.pdf" download="03-الرغبات.pdf">03 الرغبات <span>تحميل الملف</span></a>
+          </div>
+        </article>
+
+        <article class="card aaraf-post" id="aaraf-3">
+          <div class="aaraf-no">اعرف 3</div>
+          <h2>نصيحة مهمة لطلاب الشهادات المعادلة وأولياء الأمور</h2>
+          <p>التقديم في التنسيق الحكومي يحافظ على جميع خياراتك مفتوحة، حتى لو كنت تنوي الالتحاق بجامعة أهلية أو خاصة.</p>
+
+          <div class="ok">
+            <strong>لا تتسرع في التخلي عن مكان حكومي</strong>
+            إذا حصلت على مكان في كلية حكومية، لا تتسرع في التخلي عنه. لا أحد يعلم أين ستكون ميول الطالب لاحقًا أو أي مسار سيجده الأنسب له.
+          </div>
+
+          <div class="note">
+            <strong>نسبة الـ 5% قد ترتفع</strong>
+            نسبة الـ 5% قد ترتفع مع زيادة عدد المتقدمين، لذلك عدم التقديم قد يعني خسارة فرصة جيدة دون داعٍ.
+            <figure class="news-shot">
+              <a href="https://www.elwatannews.com/news/details/8337234" target="_blank" rel="noopener">
+                <img src="aaraf-03-elwatan-5percent.png" alt="خبر الوطن: وزير التعليم العالي يوضح أن نسبة قبول الشهادات المعادلة 5% ليست جامدة ويمكن زيادتها وفق أعداد المتقدمين" />
+              </a>
+            </figure>
+            <a class="source-link" href="https://www.elwatannews.com/news/details/8337234" target="_blank" rel="noopener">المصدر: الوطن — تصريح وزير التعليم العالي عن تنسيق الشهادات المعادلة 2026</a>
+          </div>
+
+          <div class="ok">
+            <strong>لا توجد «مؤامرة» لإبعاد القادرين ماديًا</strong>
+            لا توجد أي «مؤامرة» لإبعاد الطلاب القادرين ماديًا عن الجامعات الحكومية. بالعكس، يتم قبول أعداد كبيرة من طلاب المعادلات العربية والأجنبية سنويًا، خاصة في البرامج المميزة والساعات المعتمدة.
+          </div>
+
+          <div class="warn">
+            <strong>الندم بعد فوات الفرصة</strong>
+            كثير من الطلاب لا يتقدمون للتنسيق ثم يندمون لاحقًا بعد ضياع فرص كان يمكن الاستفادة منها.
+          </div>
+
+          <div class="note">
+            <strong>الخلاصة</strong>
+            قدّم في التنسيق الحكومي أولًا، واحجز مكانك، ثم قرر لاحقًا ما يناسبك. الاحتفاظ بالفرصة أفضل من فقدانها.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="fine">هذا المحتوى تنظيم بصري للمحتوى التعليمي، وليس بديلًا عن موقع التنسيق الرسمي أو تعليمات مكتب التنسيق. راجع المواعيد والقواعد من المصدر الرسمي قبل التنفيذ.</p>
+    </div>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll("nav.toc a");
+    const sections = [...links].map((a) => document.querySelector(a.getAttribute("href")));
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
+      });
+    }, { rootMargin: "-25% 0px -60% 0px" });
+    sections.forEach((s) => s && io.observe(s));
+  </script>
+</body>
+</html>
